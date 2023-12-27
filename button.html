@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Design</title>
+
+     <!-- CSS Link -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/utility.css">
+
+
+     <style>
+        a {
+            text-decoration: none;
+        }
+        .btn1 {
+            width: 160px;
+            height: 60px;
+            color: #fff;
+            background-color: black;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn1 span {
+            margin-left: 10px;
+            width: 0;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+        .btn1:hover span {
+            width: 35px;
+        }
+
+        .card {
+            width: 200px;
+            height: 200px;
+        }
+        .click-btn {
+            display: none;
+            transition:all 0.5s ease;
+        }
+        .card:hover .click-btn{
+            display: block;
+        }
+
+
+        /* login form */
+
+        .login-form  {
+            width: 420px;
+            background-color: rgb(149, 63, 229);
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            color: #fff;
+            margin-top: 30px;
+            border-radius: 10px;
+            padding: 30px 40px;
+        }
+        .login-form  h1 {
+            font-size: 36px;
+            text-align: center;
+        }
+        .login-form .input-box {
+            width: 100%;
+            height: 40px;
+            margin: 30px 0;
+            position: relative;
+        }
+        .input-box input {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid rgba(255, 255, 255, .2);
+            border-radius: 40px;
+            font-size: 16px;
+            padding: 20px;
+            color: #fff;
+        }
+        .input-box input::placeholder {
+            color: #fff;
+        }
+        .input-box svg {
+            fill: #fff;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .forgot a {
+            text-decoration: none;
+            color: #fff;
+            
+        }
+        .remember-forgot a:hover {
+            text-decoration: underline;
+        }
+        
+        .login-btn {
+            width: 100%;
+            height: 45px;
+            background-color: #fff;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            cursor: pointer;
+            color: #333;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .register-link {
+            font-size: 15px;
+            text-align: center;
+            margin: 20px 0 15px;
+        }
+        .register-link p a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .register-link p a:hover {
+            text-decoration: underline;
+        }
+</style>
+</head>
+<body class="py-5">
+    <div class="container mt-5 d-flex gap-2">
+        <a class="btn1" href="">Hover Me <span>&#10230</span></a>
+        <a class="btn1" href="">Hover Me <span>&#10230</span></a>
+    </div>
+
+
+
+    <div class="container mt-5">
+        <div class="card p-5">
+            <h1>Card</h1>
+            <div class="click-btn">
+                <button>Click me</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+       <div class="login-form">
+        <h1>Login Here</h1>
+        <form action="">
+            
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="18" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="password" required>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="18" viewBox="0 0 448 512"><path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"/></svg>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+
+            <div class="register-link">
+                <p>Don't have an account? <a href="">Register</a></p>
+            </div>
+        </form>
+       </div>
+    </div>
+  
+    
+    <!-- JS Link -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

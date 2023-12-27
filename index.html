@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-top">
+           <div class=" container">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-2 text-white">
+                    <h6>Questions?</h6>
+                    <div class="left-info">
+                        <span class="header-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                        </span>
+                        <span class="text-14">+123 125 145</span>
+                    </div>
+    
+                    <div>
+                        <span class="header-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                        </span>
+                        <span>username@domain.com</span>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-4">
+                    <div class="login-btn">
+                        <a href="">Login/Register</a>
+                    </div>
+
+                    <div class="header-social">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg>
+                        </a>
+
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
+                        </a>
+
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="15.25" viewBox="0 0 488 512"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+                        </a>
+
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+           </div>
+        </div>
+
+         <!-- Header bottom -->
+         <div class="container py-3 sticky-top">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="header-logo ">
+                    <img src="https://themearth.com/demo/html/educationplus/view/assets/img/logo2.png" alt="">
+                </div>
+
+                <div class=" d-flex align-items-center gap-3">
+                    <ul class="menu-bar">
+                        <li><a href="">Home
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                        </a>
+                        <div class="dropdown-menu">
+                            <ul>
+                              <li><a href="#">Pricing</a></li>
+                              <li><a href="#">Portfolio</a></li>
+                              <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                        <li><a href="">Pages
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                        </a>
+                        <div class="dropdown-menu">
+                            <ul>
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">Service</a></li>
+                              <li>
+                                <a href="#">Courses  
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></a>
+                                
+                                <div class="dropdown-menu-1">
+                                  <ul>
+                                    <li><a href="#">Courses</a></li>
+                                    <li><a href="#">Courses Single</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li><a href="#">Registrations</a></li>
+                              <li><a href="#">Teachers</a></li>
+                              <li><a href="#">Events</a></li>
+                              <li><a href="#">News</a></li>
+                              <li><a href="#">Gallery</a></li>
+                              <li><a href="#">Contact</a></li>
+                              <li><a href="#">Dropdown
+                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                              </a>
+                              <div class="dropdown-menu-1">
+                                <ul>
+                                  <li><a href="#">Dropdown 1</a></li>
+                                  <li><a href="#">Dropdown 2</a></li>
+                                  <li><a href="#">Dropdown 3</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                            </ul>
+                          </div>
+                    </li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Courses</a></li>
+                        <li><a href="">Events</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+
+                   <div class="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                   </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="hero-section">
+       <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="hero-left">
+                        <h2>Premium Quality</h2>
+                        <h1>EDUCATION TEMPLATE</h1>
+                        <p>Aentegers sollicitudin molestie ante et dictum laoreet we are the Excilent. Nascetur ridiculus mus. Proin porta lectus eleifend.</p>
+                    <div class="hero-btn">
+                        <a class="reg-btn" href="">Registration
+                            <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg></span>
+                        </a>
+                        <a class="course-btn" href="">All courses
+                            <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg></span>
+                        </a>   
+                    </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </section>
+
+    <!-- video Section -->
+
+    <section class="pt-120 pb-120">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="video-left text-center">
+                        <h2>Learn To Education Plus</h2>
+                        <p class="video-txt">Pellentesque habitant morbi tristique senectus et netus et malesuada habitant morbi tristique senectus netus fames ac turpis.</p>
+    
+                        <p>Pellentesque habitant morbi tristique senectus netus et malesuada fames turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris Eonec eu ribero sit amet quam egestas semper. Aenean are ultricies mi vitae est tristique senectus et netus et malesuada placerat leo.</p>
+    
+                        <div class="read-btn">
+                            <a href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-img">
+                        <img src="media/video2.jpg" alt="">
+                        <img src="media/play-button.png" alt="" class="play-btn" onclick="playVideo('media/vid1.mp4')">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay id="myVideo">
+            <source src="media/vid1.mp4" type="video/mp4">
+        </video>
+        <img src="media/close.png" class="close-btn" alt="" onclick="stopVideo()">
+    </div>
+
+    <!-- Card Section -->
+
+    <section class="card-section pb-120">
+        <div class="container">
+            <div class="row">
+                <!-- 1st Card -->
+                <div class="col-md-4">
+                    <div class="card-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z"/></svg> 
+                        <h4>Free Tutorials</h4>
+                        <p>Etiam vel ante ac lacus vestibulum rutrum. Aliquam vehicula, massa in auctor dapibus commodo quis vehicula lacus metus sed justo.</p>
+                        <a href="">Read More</a> 
+                    </div>
+                </div>
+
+                <!-- 2nd Card -->
+                <div class="col-md-4">
+                    <div class="card-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 0 512 512"><path d="M160 96a96 96 0 1 1 192 0A96 96 0 1 1 160 96zm80 152V512l-48.4-24.2c-20.9-10.4-43.5-17-66.8-19.3l-96-9.6C12.5 457.2 0 443.5 0 427V224c0-17.7 14.3-32 32-32H62.3c63.6 0 125.6 19.6 177.7 56zm32 264V248c52.1-36.4 114.1-56 177.7-56H480c17.7 0 32 14.3 32 32V427c0 16.4-12.5 30.2-28.8 31.8l-96 9.6c-23.2 2.3-45.9 8.9-66.8 19.3L272 512z"/></svg> 
+                        <h4>500+ Courses</h4>
+                        <p>Etiam vel ante ac lacus vestibulum rutrum. Aliquam vehicula, massa in auctor dapibus commodo quis vehicula lacus metus sed justo.</p>
+                        <a href="">Read More</a>    
+                    </div>
+                </div>
+
+                <!-- 3rd Card -->
+                <div class="col-md-4">
+                    <div class="card-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 0 448 512"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>    
+                        <h4>180k Books Available</h4>
+                        <p>Etiam vel ante ac lacus vestibulum rutrum. Aliquam vehicula, massa in auctor dapibus commodo quis vehicula lacus metus sed justo.</p>
+                        <a href="">Read More</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Offered Courses Section -->
+    <section class="courses-section">
+        <div class="courses-title text-center">
+            <h2 class="text-42 fw-600">Offerd Courses</h2>
+            <p>Some Trendy And Popular Courses Offerd</p>
+        </div>
+        <div class="container">
+            <div class="filter-btns filter-button-group">
+                <button class="active" data-filter="*">All</button>
+                <button data-filter=".design">Design</button>
+                <button data-filter=".python">Python</button>
+                <button data-filter=".wordpress">Wordpress</button>
+                <button data-filter=".joomla">Joomla</button>
+            </div>
+           <div class="filter-content">
+            <div class="row grid">
+                <!-- 1st Card -->
+                <div class="col-md-4 wordpress">
+                    <div class="card">
+                        <div class="img1">
+                            <img src="images/course1.jpg" alt="">
+                        </div>
+                        <div class="img2">
+                            <img src="images/author1.jpg" alt="">
+                        </div>
+                        <!-- Overlay -->
+                        <div class="overlay">
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 448 512"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                            </a>
+                        </div>
+
+                        <div class="main-txt">
+                            <h5>Jonathon Eduplus</h5>
+                            <h6>Lacture of Eduplus</h6>
+                            <h4>Learn Python - Interactive Python</h4>
+                        </div>
+
+                        <hr>
+
+                        <!-- Card Bottom -->
+                        <div class="card-bottom">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex gap-3 align-items-center justify-content-center">
+                                <div>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg></span>
+                                    <span>558</span>
+                                </div>
+                                <div>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M168.2 384.9c-15-5.4-31.7-3.1-44.6 6.4c-8.2 6-22.3 14.8-39.4 22.7c5.6-14.7 9.9-31.3 11.3-49.4c1-12.9-3.3-25.7-11.8-35.5C60.4 302.8 48 272 48 240c0-79.5 83.3-160 208-160s208 80.5 208 160s-83.3 160-208 160c-31.6 0-61.3-5.5-87.8-15.1zM26.3 423.8c-1.6 2.7-3.3 5.4-5.1 8.1l-.3 .5c-1.6 2.3-3.2 4.6-4.8 6.9c-3.5 4.7-7.3 9.3-11.3 13.5c-4.6 4.6-5.9 11.4-3.4 17.4c2.5 6 8.3 9.9 14.8 9.9c5.1 0 10.2-.3 15.3-.8l.7-.1c4.4-.5 8.8-1.1 13.2-1.9c.8-.1 1.6-.3 2.4-.5c17.8-3.5 34.9-9.5 50.1-16.1c22.9-10 42.4-21.9 54.3-30.6c31.8 11.5 67 17.9 104.1 17.9c141.4 0 256-93.1 256-208S397.4 32 256 32S0 125.1 0 240c0 45.1 17.7 86.8 47.7 120.9c-1.9 24.5-11.4 46.3-21.4 62.9zM144 272a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm144-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm80 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
+                                    </span>
+                                    <span>55</span>
+                                </div>
+                            </div>
+                            <div class="bottom-right">
+                                <span><strong>75</strong>$</span>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd Card -->
+                <div class="col-md-4 python">
+                    <div class="card">
+                        <div class="img1">
+                            <img src="images/course1.jpg" alt="">
+                        </div>
+                        <div class="img2">
+                            <img src="images/author2.jpg" alt="">
+                        </div>
+                        <!-- Overlay -->
+                        <div class="overlay">
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 448 512"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                            </a>
+                        </div>
+                        <div class="main-txt">
+                            <h5>Riaz Sagar</h5>
+                            <h6>Lacture of Education Plus</h6>
+                            <h4>Advance Oracle - Learn Intermediate Oracle</h4>
+                        </div>
+
+                        <hr>
+                        <!-- Card Bottom -->
+                        <div class="card-bottom">
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="d-flex gap-3 align-items-center justify-content-center">
+                                  <div>
+                                      <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg></span>
+                                      <span>558</span>
+                                  </div>
+                                  <div>
+                                      <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M168.2 384.9c-15-5.4-31.7-3.1-44.6 6.4c-8.2 6-22.3 14.8-39.4 22.7c5.6-14.7 9.9-31.3 11.3-49.4c1-12.9-3.3-25.7-11.8-35.5C60.4 302.8 48 272 48 240c0-79.5 83.3-160 208-160s208 80.5 208 160s-83.3 160-208 160c-31.6 0-61.3-5.5-87.8-15.1zM26.3 423.8c-1.6 2.7-3.3 5.4-5.1 8.1l-.3 .5c-1.6 2.3-3.2 4.6-4.8 6.9c-3.5 4.7-7.3 9.3-11.3 13.5c-4.6 4.6-5.9 11.4-3.4 17.4c2.5 6 8.3 9.9 14.8 9.9c5.1 0 10.2-.3 15.3-.8l.7-.1c4.4-.5 8.8-1.1 13.2-1.9c.8-.1 1.6-.3 2.4-.5c17.8-3.5 34.9-9.5 50.1-16.1c22.9-10 42.4-21.9 54.3-30.6c31.8 11.5 67 17.9 104.1 17.9c141.4 0 256-93.1 256-208S397.4 32 256 32S0 125.1 0 240c0 45.1 17.7 86.8 47.7 120.9c-1.9 24.5-11.4 46.3-21.4 62.9zM144 272a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm144-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm80 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
+                                      </span>
+                                      <span>55</span>
+                                  </div>
+                              </div>
+                              <div class="bottom-right">
+                                  <span><strong>75</strong>$</span>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <!-- 3rd Card -->
+                <div class="col-md-4 design">
+                    <div class="card">
+                        <div class="img1">
+                            <img src="images/course1.jpg" alt="">
+                        </div>
+                        <div class="img2">
+                            <img src="images/author5.jpg" alt="">
+                        </div>
+                        <!-- Overlay -->
+                        <div class="overlay">
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 448 512"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                            </a>
+                        </div>
+                        <div class="main-txt">
+                            <h5>Vaskar Roy</h5>
+                            <h6>Lacture of Edumaster</h6>
+                            <h4>Basic PHP - Learn Basic PHP Language</h4>
+                        </div>
+
+                        <hr>
+                        <!-- Card Bottom -->
+                        <div class="card-bottom">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex gap-3 align-items-center justify-content-center">
+                                <div>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg></span>
+                                    <span>558</span>
+                                </div>
+                                <div>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M168.2 384.9c-15-5.4-31.7-3.1-44.6 6.4c-8.2 6-22.3 14.8-39.4 22.7c5.6-14.7 9.9-31.3 11.3-49.4c1-12.9-3.3-25.7-11.8-35.5C60.4 302.8 48 272 48 240c0-79.5 83.3-160 208-160s208 80.5 208 160s-83.3 160-208 160c-31.6 0-61.3-5.5-87.8-15.1zM26.3 423.8c-1.6 2.7-3.3 5.4-5.1 8.1l-.3 .5c-1.6 2.3-3.2 4.6-4.8 6.9c-3.5 4.7-7.3 9.3-11.3 13.5c-4.6 4.6-5.9 11.4-3.4 17.4c2.5 6 8.3 9.9 14.8 9.9c5.1 0 10.2-.3 15.3-.8l.7-.1c4.4-.5 8.8-1.1 13.2-1.9c.8-.1 1.6-.3 2.4-.5c17.8-3.5 34.9-9.5 50.1-16.1c22.9-10 42.4-21.9 54.3-30.6c31.8 11.5 67 17.9 104.1 17.9c141.4 0 256-93.1 256-208S397.4 32 256 32S0 125.1 0 240c0 45.1 17.7 86.8 47.7 120.9c-1.9 24.5-11.4 46.3-21.4 62.9zM144 272a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm144-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm80 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
+                                    </span>
+                                    <span>55</span>
+                                </div>
+                            </div>
+                            <div class="bottom-right">
+                                <span><strong>75</strong>$</span>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4th Card -->
+                <div class="col-md-4 wordpress">
+                    <div class="card">
+                        <div class="img1">
+                            <img src="images/course1.jpg" alt="">
+                        </div>
+                        <div class="img2">
+                            <img src="images/courses-author1.jpg" alt="">
+                        </div>
+
+                        <!-- Overlay -->
+                        <div class="overlay">
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 448 512"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                            </a>
+                        </div>
+                        <div class="main-txt">
+                            <h5>Jonathon Doc</h5>
+                            <h6>Lacture of Edumaster</h6>
+                            <h4>Learn Java ainteractive Java resources</h4>
+                        </div>
+
+                        <hr>
+
+                        <!-- Card Bottom -->
+                        <div class="card-bottom">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex gap-3 align-items-center justify-content-center">
+                                <div>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg></span>
+                                    <span>558</span>
+                                </div>
+                                <div>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M168.2 384.9c-15-5.4-31.7-3.1-44.6 6.4c-8.2 6-22.3 14.8-39.4 22.7c5.6-14.7 9.9-31.3 11.3-49.4c1-12.9-3.3-25.7-11.8-35.5C60.4 302.8 48 272 48 240c0-79.5 83.3-160 208-160s208 80.5 208 160s-83.3 160-208 160c-31.6 0-61.3-5.5-87.8-15.1zM26.3 423.8c-1.6 2.7-3.3 5.4-5.1 8.1l-.3 .5c-1.6 2.3-3.2 4.6-4.8 6.9c-3.5 4.7-7.3 9.3-11.3 13.5c-4.6 4.6-5.9 11.4-3.4 17.4c2.5 6 8.3 9.9 14.8 9.9c5.1 0 10.2-.3 15.3-.8l.7-.1c4.4-.5 8.8-1.1 13.2-1.9c.8-.1 1.6-.3 2.4-.5c17.8-3.5 34.9-9.5 50.1-16.1c22.9-10 42.4-21.9 54.3-30.6c31.8 11.5 67 17.9 104.1 17.9c141.4 0 256-93.1 256-208S397.4 32 256 32S0 125.1 0 240c0 45.1 17.7 86.8 47.7 120.9c-1.9 24.5-11.4 46.3-21.4 62.9zM144 272a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm144-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm80 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
+                                    </span>
+                                    <span>55</span>
+                                </div>
+                            </div>
+                            <div class="bottom-right">
+                                <span><strong>75</strong>$</span>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5th Card -->
+                <div class="col-md-4 design">
+                    <div class="card">
+                        <div class="img1">
+                            <img src="images/course1.jpg" alt="">
+                        </div>
+                        <div class="img2">
+                            <img src="images/author3.jpg" alt="">
+                        </div>
+
+                        <!-- Overlay -->
+                        <div class="overlay">
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 448 512"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                            </a>
+                        </div>
+                        <div class="main-txt">
+                            <h5>Jonathon Talukder</h5>
+                            <h6>Lacture of Edumaster</h6>
+                            <h4>Learn Electronics from education Plus</h4>
+                        </div>
+
+                        <hr>
+
+                        <!-- Card Bottom -->
+                        <div class="card-bottom">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex gap-3 align-items-center justify-content-center">
+                                <div>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg></span>
+                                    <span>558</span>
+                                </div>
+                                <div>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M168.2 384.9c-15-5.4-31.7-3.1-44.6 6.4c-8.2 6-22.3 14.8-39.4 22.7c5.6-14.7 9.9-31.3 11.3-49.4c1-12.9-3.3-25.7-11.8-35.5C60.4 302.8 48 272 48 240c0-79.5 83.3-160 208-160s208 80.5 208 160s-83.3 160-208 160c-31.6 0-61.3-5.5-87.8-15.1zM26.3 423.8c-1.6 2.7-3.3 5.4-5.1 8.1l-.3 .5c-1.6 2.3-3.2 4.6-4.8 6.9c-3.5 4.7-7.3 9.3-11.3 13.5c-4.6 4.6-5.9 11.4-3.4 17.4c2.5 6 8.3 9.9 14.8 9.9c5.1 0 10.2-.3 15.3-.8l.7-.1c4.4-.5 8.8-1.1 13.2-1.9c.8-.1 1.6-.3 2.4-.5c17.8-3.5 34.9-9.5 50.1-16.1c22.9-10 42.4-21.9 54.3-30.6c31.8 11.5 67 17.9 104.1 17.9c141.4 0 256-93.1 256-208S397.4 32 256 32S0 125.1 0 240c0 45.1 17.7 86.8 47.7 120.9c-1.9 24.5-11.4 46.3-21.4 62.9zM144 272a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm144-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm80 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
+                                    </span>
+                                    <span>55</span>
+                                </div>
+                            </div>
+                            <div class="bottom-right">
+                                <span><strong>75</strong>$</span>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6th Card -->
+                <div class="col-md-4 joomla">
+                    <div class="card">
+                        <div class="img1">
+                            <img src="images/course1.jpg" alt="">
+                        </div>
+                        <div class="img2">
+                            <img src="images/author4.jpg" alt="">
+                        </div>
+
+                        <!-- Overlay -->
+                        <div class="overlay">
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 448 512"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                            </a>
+                        </div>
+                        <div class="main-txt">
+                            <h5>Jonathon doc</h5>
+                            <h6>Lacture of Edumaster</h6>
+                            <h4>Learn Python - Interactive Python Code</h4>
+                        </div>
+
+                        <hr>
+
+                        <!-- Card Bottom -->
+                        <div class="card-bottom">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex gap-3 align-items-center justify-content-center">
+                                <div>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg></span>
+                                    <span>558</span>
+                                </div>
+                                <div>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M168.2 384.9c-15-5.4-31.7-3.1-44.6 6.4c-8.2 6-22.3 14.8-39.4 22.7c5.6-14.7 9.9-31.3 11.3-49.4c1-12.9-3.3-25.7-11.8-35.5C60.4 302.8 48 272 48 240c0-79.5 83.3-160 208-160s208 80.5 208 160s-83.3 160-208 160c-31.6 0-61.3-5.5-87.8-15.1zM26.3 423.8c-1.6 2.7-3.3 5.4-5.1 8.1l-.3 .5c-1.6 2.3-3.2 4.6-4.8 6.9c-3.5 4.7-7.3 9.3-11.3 13.5c-4.6 4.6-5.9 11.4-3.4 17.4c2.5 6 8.3 9.9 14.8 9.9c5.1 0 10.2-.3 15.3-.8l.7-.1c4.4-.5 8.8-1.1 13.2-1.9c.8-.1 1.6-.3 2.4-.5c17.8-3.5 34.9-9.5 50.1-16.1c22.9-10 42.4-21.9 54.3-30.6c31.8 11.5 67 17.9 104.1 17.9c141.4 0 256-93.1 256-208S397.4 32 256 32S0 125.1 0 240c0 45.1 17.7 86.8 47.7 120.9c-1.9 24.5-11.4 46.3-21.4 62.9zM144 272a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm144-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm80 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
+                                    </span>
+                                    <span>55</span>
+                                </div>
+                            </div>
+                            <div class="bottom-right">
+                                <span><strong>75</strong>$</span>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+    </section>
+
+    <!-- Gradient Section -->
+
+    <section class="gradient-section">
+        <div class="container">
+           <div class="gradient-content text-white">
+            <h2>You’re Learning Free</h2>
+            <h1 class="fw-900 text-60">STARTED TODAY!</h1>
+            <p>Mauris sagittis felis vitae augue posuere fringilla. Nulla tincidunt, magna non sceleris tempor, libero arcu tempor erat, quis imperdiet mi purus eget arcu. Sed luctus viverra libero, non rutrum ligula volutpat a. Etiam commodo bibendum elit at vestibulum</p>
+            <div class="hero-btn">
+                <a class="reg-btn" href="">Registration
+                    <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg></span>
+                </a>
+            </div>
+           </div>
+        </div>
+    </section>
+
+    <!-- Slider Section -->
+    <section class="slider-section">
+        <div class="slider-title text-center">
+            <h2 class="text-42 fw-600">Qualified Teachers</h2>
+            <p>Some Special Teachers From The Industry!</p>
+        </div>
+        <div class="container">
+            <div class="slider-card">
+                <img src="images/teacher1.jpg" alt="">
+                <div class="slider-info">
+                    <h5>Enathon Jackson <span>Lecturer</span></h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero ab tenetur consequatur, unde quos est?</p>
+                    <div class="slider-social">
+                        <div>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg>
+                            </a>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
+                            </a>
+
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="15.25" viewBox="0 0 488 512"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+                            </a>
+
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script>
+        var videoPlayer = document.getElementById("videoPlayer");
+        var myVideo = document.getElementById("myVideo");
+
+        function stopVideo(){
+            videoPlayer.style.display = "none";
+        }
+
+        function playVideo (file){
+            myVideo.src = file;
+            videoPlayer.style.display = "block";
+        }
+</script>
+
+
+
+
+    <div style="height: 1000px;"></div>
+
+    <!-- JS Link -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
